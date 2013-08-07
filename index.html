@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+	itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<head>
+<meta charset="utf-8" />
+<!--[if lte IE 8]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,chrome=1"/><![endif]-->
+<meta name="viewport" content="width=device-width, max-scale=1.0, min-scale=1.0" />
+<title itemprop="name">IMG Crossmedia Studio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script>
+/*	Quer mudar algum tempo de transição de slide ou de notícias
+	especificamente para uma página? Altere os valores desejados
+	aqui (tempo dado em segundos). É possível alterar apenas os
+	valores desejados sem repetir aqui os que se deseja manter
+	como está deseja manter (se não quiser alterar nenhum valor
+	é possível deletar essa tag "script" toda. Foram colocados todos os valores de
+	opções apenas para demonstração */
+	
+//tempo da primeira entrada do slideshow	
+var sliderFadeIn = .5; 
+//tempo em que cada imagem fica exposta
+var sliderSpd = 7.5;
+//tempo para mudança de cada slide
+var transitionSliderSpd = .75;
+//tempo para mudança do título da home 
+var homeTitleSpd = .2;
+//tempo para abrir e fechar o título da home 
+var fadeTitleSpd = .5;
+//tempo em que cada notícia fica exposta 
+var newsSpd = 15; 
+//tempo para a transição de noticia
+var transitionNewsSpd = .4;
+</script>
+<script src="js/modernizr.js"></script>
+</head>
+
+<body id="home">
+	<header>
+		<div>
+			<!--____________[ Menu Principal ]____________-->
+			<nav>
+				<ul>
+					<li><a href="index.html" id="marca" class="botao" title="home">
+							<span class="nodisplay">img </span><span
+							itemprop="specialty"><span id="crossmedia">crossmedia studio</span><br/><span id="assinatura">animation &amp; games</span></span>
+					</a></li>
+					<li><a href="works.html">our work</a></li>
+					<li><a href="about.html">the studio</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
+			<!--____________[ Menu de seleção de linguas ]____________-->
+			<ul title="Language options" id="escolhalingua">
+				<li><a href class="linguas"><abbr title="Português">pt</abbr></a></li>
+				<li class="selecionado"><a href class="linguas"><abbr
+						title="English">en</abbr></a></li>
+			</ul>
+		</div>
+	</header>
+	<!--____________[ Conteúdo Principal ]____________-->
+	<div role="main">
+		<div>
+			<div class="chamada">
+				<h1>
+					<span id="featured">Featured work:</span><span id="fechar"
+						title="show info" class="fechado"></span>
+				</h1>
+			</div>
+		</div>
+		<div>
+			<ul class="butcher slider">
+				<li><img src="img/home/hires/banner1.png"
+					alt="Game: Brasil Quest|Banner 1" /><a href="project.html"></a></li>
+				<li><img src="img/home/hires/banner2.png"
+					alt="Video: Brasília|Banner 2" /><a href="project.html"></a></li>
+				<li><img src="img/home/hires/banner1.png"
+					alt="Game: Brasil Quest|Banner 3" /><a href="project.html"></a></li>
+				<li><img src="img/home/hires/banner2.png"
+					alt="Video: Brasília|Banner 4" /><a href="project.html"></a></li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<div id="news">
+				<h1>Latest from fb.com/img.tv</h1>
+				<ul id="newslist">
+					<li><h2>29.1.2013</h2>Em parceria com a agência Borghi/Lowe,
+						desenvolvemos o primeiro aplicativo mobile para iPad da Caixa
+						Econômica Federal... <a href="#" class="more ext">more</a></li>
+					<li><h2>27.12.2012</h2>Passando para desejar ótimas festas e
+						um excelente ano novo a todos os nossos clientes, amigos e... <a
+						href="#" class="more ext">more</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="img/home/logo-footer.png" id="logo" itemprop="logo"
+					alt="img logo" /> |
+				<nav class="share" title="Share">
+					<ul>
+						<li><a href class="botao share vimeo" title="vimeo"
+							itemprop="relatedLink"><span class="nodisplay">vimeo</span></a></li>
+						<li><a href class="botao share facebook" title="facebook"
+							itemprop="relatedLink"><span class="nodisplay">facebook</span></a></li>
+						<li><a href class="botao share twitter" title="twitter"
+							itemprop="relatedLink"><span class="nodisplay">twitter</span></a></li>
+					</ul>
+				</nav>
+				<p itemprop="author" itemscope="itemscope"
+					itemtype="http://schema.org/Organization">
+					&copy; <span itemscope="itemscope"
+						itemtype="http://schema.org/WebPage" itemprop="copyrightYear">2009</span>
+					- 2013 <span itemprop="name">IMG Crossmedia Studio</span>. <span
+						itemprop="location">Brasília, Brasil</span> | <a
+						href="mailto:oi@img.tv" itemprop="email">oi@img.tv</a> | <span
+						itemprop="telephone">+55 61 3963 3845</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
