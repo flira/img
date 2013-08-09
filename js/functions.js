@@ -450,7 +450,8 @@ function showTitle() {
  */
 function works() {
 	$('input[type=radio]').click(markRadio);
-	worksClasses();
+	//worksClasses();
+    setCGMargin( );
 	resizeHeight();
 	$(window).resize(resizeHeight);
 	$('.chamadagrande').before('<li class="break"></li>');

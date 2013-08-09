@@ -666,6 +666,7 @@ body#home>footer,
 
 /*	[3.1]Por float
 ______________________________________________________*/
+.dir,
 #escolhalingua,
 body>footer nav,
 #works form,
@@ -674,6 +675,7 @@ body>footer nav,
 	float:right
 }
 
+.esq,
 .initial,
 nav li,
 .slider li,
@@ -688,7 +690,6 @@ body#home>footer>div>div:first-child,
 }
 
 body#home>footer nav,
-.chamadagrande,
 .chamadapequena,
 .break,
 #marca {
