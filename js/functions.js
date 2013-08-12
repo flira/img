@@ -450,12 +450,12 @@ function showTitle() {
  */
 function works() {
 	$('input[type=radio]').click(markRadio);
-	//worksClasses();
+    $('.chamadagrande').before('<li class="break"></li>');
+	$('#stufflist li img').after('<span class="triangulo"></span>');
+    macOSFix();
     setCGMargin( );
 	resizeHeight();
 	$(window).resize(resizeHeight);
-	$('.chamadagrande').before('<li class="break"></li>');
-	$('#stufflist li img').after('<span class="triangulo"></span>');
 	$('.no-touch #stufflist li a').hover(showDescription, hideAgain);
 	$(window).resize(setCGMargin);
 
@@ -479,35 +479,6 @@ function works() {
 	 * função que faz o loop para ter 1 chamada grande, 4 pequenas e 1 grande
 	 * novamente
 	 */
-	function worksLoop(n,m,o) {
-		var p,q;
-		if(!o)o=n-1;
-		if(m%2==0)p=true;
-		else p=false;
-		for ( var j = 1; j < n; j++) {
-			q=(m * o) + j;
-			if(!$('#stufflist li:nth-child(' + q + ')').hasClass('carregar')) {
-				if (j == 1) {
-					$('#stufflist li:nth-child(' + q + ')').addClass('chamadagrande');
-					if(!p){
-						$('#stufflist li:nth-child(' + q + ')').addClass('dir')
-						$('#stufflist li:nth-child(' + q + ')').css({
-							'float':'right'	
-						});
-						macOSFix();
-					} else {
-						$('#stufflist li:nth-child(' + q + ')').addClass('esq')
-						$('#stufflist li:nth-child(' + q + ')').css({
-							'float':'left'
-						});
-					}	
-				} else {
-					$('#stufflist li:nth-child(' + q + ')').addClass('chamadapequena');
-				}
-			}
-		}
-		setCGMargin( );
-	}
 	
 	function setCGMargin( ) {
 		$('.chamadagrande.esq').css ({
@@ -520,19 +491,17 @@ function works() {
 	}
 	
 	function macOSFix( ) {
-		var a=$('.chamadagrande').offset().top,b=$('.chamadapequena').offset().top,c=.1,d=parseFloat($('.chamadagrande').css('margin-top'));
+		var a=$('.chamadagrande').offset().top,b=$('.chamadapequena').offset().top;
 		if(a<b) {
 			if(!$('html').hasClass('macfix'))$('html').addClass('macfix');
-			/*if( parseFloat($(window).width())>800) {
-				while(a<b) {
-					$('.chamadagrande').css('margin-top',c+'px');
-					c+=.1;
-					a=$('.chamadagrande').offset().top;
-				}
-
-			}
-			$('.dir').css('margin-top',c+'px');
-			$('.esq').css('margin-top',c+'px');*/
+            $('.chamadagrande img').width(Math.round($('#stufflist').width()*0.49));
+            $('.chamadagrande img').height(Math.round($('.chamadagrande img').height()));
+            $('.chamadapequena img').width(Math.round($('#stufflist').width()*0.235));
+            $('.chamadapequena img').height(Math.round($('.chamadagrande img').height() * ($('.chamadapequena img').width()/$('.chamadagrande img').width())));
+            if($('.chamadapequena h2').height()>25) {
+                $('span.triangulo').css('margin-top','-13.75px');
+                $('.chamadapequena h2').css('font-size','21px');
+            }
 		}
 	}
 	
