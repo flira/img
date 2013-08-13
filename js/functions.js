@@ -452,7 +452,7 @@ function works() {
 	$('input[type=radio]').click(markRadio);
     $('.chamadagrande').before('<li class="break"></li>');
 	$('#stufflist li img').after('<span class="triangulo"></span>');
-    macOSFix();
+	addMacOSFix();
     setCGMargin( );
 	resizeHeight();
 	$(window).resize(resizeHeight);
@@ -481,27 +481,39 @@ function works() {
 	 */
 	
 	function setCGMargin( ) {
+		macOSFix();
 		$('.chamadagrande.esq').css ({
 			'margin-right' : calculateCGMargin( )
 		});
 		$('.chamadagrande.dir').css ({
 			'margin-left' : calculateCGMargin( )
 		});
-
+	}
+	
+	function addMacOSFix( ) {
+		var a=$('.chamadagrande').offset().top,b=$('.chamadapequena').offset().top;
+		if(a<b && !$('html').hasClass('macfix')) {
+			$('html').addClass('macfix');
+			if($('.chamadapequena h2').height()>25) {
+                $('span.triangulo').css('margin-top','-13.75px');
+                $('.chamadapequena h2').css('font-size','21px');
+			}
+		}
 	}
 	
 	function macOSFix( ) {
-		var a=$('.chamadagrande').offset().top,b=$('.chamadapequena').offset().top;
-		if(a<b) {
-			if(!$('html').hasClass('macfix'))$('html').addClass('macfix');
-            $('.chamadagrande img').width(Math.round($('#stufflist').width()*0.49));
-            $('.chamadagrande img').height(Math.round($('.chamadagrande img').height()));
-            $('.chamadapequena img').width(Math.round($('#stufflist').width()*0.235));
-            $('.chamadapequena img').height(Math.round($('.chamadagrande img').height() * ($('.chamadapequena img').width()/$('.chamadagrande img').width())));
-            if($('.chamadapequena h2').height()>25) {
-                $('span.triangulo').css('margin-top','-13.75px');
-                $('.chamadapequena h2').css('font-size','21px');
-            }
+		if($('html').hasClass('macfix')) {
+			$('.chamadagrande img, .chamadapequena img').css({
+				'width':'100%',
+				'height':'auto'
+			})
+			if( $(window).width()>800 ) {
+				var a= new Array('.chamadagrande img','.chamadapequena img');
+				for (var i=0;i<a.length;i++) {
+					$(a[i]).width(Math.abs($(a[i]).width()));
+					$(a[i]).height(Math.abs($(a[i]).height()));
+				}
+			}
 		}
 	}
 	
