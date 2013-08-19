@@ -117,7 +117,7 @@ h1,
 }
 
 span.tipo,
-#project h2,
+#project .description h2,
 #stufflist h4,
 .chamada h3 {
 	font-weight:400
@@ -152,7 +152,7 @@ em {
 #works label,
 span.tipo,
 #stufflist h4,
-#project h2,
+#project .description h2,
 .firstWord,
 .chamada h3{
 	text-transform:uppercase
@@ -172,7 +172,7 @@ h3,
 	font-size:1.3em;
 	margin:.5em 0 .1em
 }
-#project h2 {
+#project .description h2 {
 	margin:0 0 1em
 }
 
@@ -181,7 +181,7 @@ h3,
 }
 
 #home h1,
-#project h2 {
+#project .description h2 {
 	font-size:1em
 }
 
@@ -491,7 +491,7 @@ ______________________________________________________*/
 #fechar,
 #project .imgvid .slider li:first-child,
 #works .chamadagrande,
-#works span.triangulo {
+span.triangulo {
 	display:block
 }
 
@@ -718,7 +718,7 @@ body#home>footer,
 .slider,
 .slidectrlwrap,
 .sliderctrl,
-#works span.triangulo,
+span.triangulo,
 #project .imgvid .grid li{
 	position:relative
 }
@@ -883,13 +883,14 @@ ______________________________________________________*/
 	color:#cfcfcb;
 	font-size:2.1em;
 }
-#works span.triangulo {
+span.triangulo {
 	background:url(img/borderworks.png) no-repeat;
 	width:12px;
 	height:12px;
 	margin:-12px 0 0;
 }
-.macfix #works span.triangulo {
+.macfix span.triangulo,
+#project span.triangulo {
 	margin:-13px 0 0;
 }
 

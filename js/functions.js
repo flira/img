@@ -538,6 +538,7 @@ function project() {
 	$(window).resize(resizeHeight);
 	$(window).resize(resizeSlider);
 	$('.no-touch #stufflist li a').hover(showDescription, hideAgain);
+	$('#stufflist li img').after('<span class="triangulo"></span>');
 	
 	/*
 	 * função para adicionar os textos de hover ao título "share" desta página
