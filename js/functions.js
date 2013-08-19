@@ -594,10 +594,10 @@ function project() {
 		$('.imgvid object param[name=vimeo]').parent().parent().addClass('vimeo');
 		$('.imgvid .vimeo object').before('<div class="play"></div>');
 		addIframes( );
-		adjustPlayer();
-		$(window).resize(adjustPlayer);
 		$('.slider .vimeo').click(playVideo);
 		replaceObjects ();
+		adjustPlayer();
+		$(window).resize(adjustPlayer);
 	}
 	
 	function addIframes( ) {
@@ -608,11 +608,11 @@ function project() {
 	
 	function adjustPlayer( ) {
 		if ($('.slider .vimeo iframe').css('display')=='none') {
-			$('.slider .vimeo').height($('.slider .vimeo object').height());
+			$('.slider .vimeo').height($('.slider .vimeo img').height());
 		} else {
 			$('.slider .vimeo').height($('.slider .vimeo iframe').height());
 		}
-		$('.slider .vimeo .play').height($('.slider .vimeo object').height());
+		$('.slider .vimeo .play').height($('.slider .vimeo img').height());
 		$('.mask .vimeo .play').height($('.mask .vimeo object').height());
 	}
 	

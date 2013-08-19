@@ -117,6 +117,7 @@ h1,
 }
 
 span.tipo,
+#project h2,
 #stufflist h4,
 .chamada h3 {
 	font-weight:400
@@ -151,6 +152,7 @@ em {
 #works label,
 span.tipo,
 #stufflist h4,
+#project h2,
 .firstWord,
 .chamada h3{
 	text-transform:uppercase
@@ -170,12 +172,16 @@ h3,
 	font-size:1.3em;
 	margin:.5em 0 .1em
 }
+#project h2 {
+	margin:0 0 1em
+}
 
 #home #news h1 {
 	margin:0 0 .1em
 }
 
-#home h1 {
+#home h1,
+#project h2 {
 	font-size:1em
 }
 
@@ -329,7 +335,7 @@ body>footer nav.share,
 }
 
 #project>div>article>article>div>h1 {
-	margin:0 0 .8em;
+	margin:0;
 }
 
 div[role=main] {
@@ -843,7 +849,8 @@ ______________________________________________________*/
 	padding:29% 0
 }
 #works div[role=main] nav ul {
-	padding-bottom:1em;
+	margin-top:-.5em;
+	padding-bottom:1em
 }
 #works .break {
 	margin:-2em 0!important;	
@@ -962,7 +969,7 @@ ______________________________________________________*/
 #project div[itemprop=breadcrumb] {
 	font-size:2.15em;
 	height:2em;
-	margin:0 -2em 1em 0;
+	margin:0 -2em .5em 0;
 	padding-bottom:.35em
 }
 
@@ -1106,6 +1113,10 @@ ______________________________________________________*/
 		max-height:none;
 		max-width:100%
 	}
+	.imgvid .grid li {
+		width:49.5%;
+		max-width:none;	
+	}
 	body#home>footer>div>div {
 		 border-top:solid 1px #bcbcb9;
 		 border-left:none;
@@ -1189,6 +1200,7 @@ ______________________________________________________*/
 		width:49%;
 		margin-bottom:1%
 	}
+
 	.slider .play {
 		background-size:120px 102px
 	}
@@ -1205,8 +1217,12 @@ ______________________________________________________*/
 		position:static
 	}
 	#project #stufflist li,
+	.imgvid .grid li,
 	#still li {
 		width:100%;
+	}
+	.imgvid .slider{
+		margin-bottom:2em;	
 	}
 	.slider .play {
 		background-size:60px 51px
