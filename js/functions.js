@@ -200,8 +200,6 @@ function nextSlide(a) {
 	}
 	else {
 		b = 1 + ($('.slider li').length - $('.slider li[style*="opacity: 1"]').length);
-		if ($('body').attr('id') == 'home')
-			getHomeTitle(a);
 		a++;
 	
 		changeCtrl(a, 'div[role=main] ');
@@ -216,8 +214,6 @@ function nextSlide(a) {
 }
 // função para passar para a imagem anterior nos sliders
 function previousSlide(a) {
-	if ($('body').attr('id') == 'home')
-		getHomeTitle(a - 1);
 	changeCtrl(a, 'div[role=main] ');
 	$('.slider li:nth-of-type(' + a + ')').animate({
 		'opacity' : 1
@@ -374,74 +370,7 @@ function resetImgSize(i, newMargin) {
 function fhome() {
 	resizeButcher();
 	$(window).resize(resizeButcher);
-	getHomeTitle(0);
 	news();
-	$('#fechar').click(toggleHeading);
-
-	// função que abre e fecha o box de chamada
-	function toggleHeading() {
-		if (!$(this).hasClass("fechado")) {
-			$('#featured,.chamada h2,.chamada h3').hide(timers[4]);
-			$('.chamada').animate({
-				width : '1.9em',
-				height : '1.1em'
-			}, timers[4], function() {
-				$('#fechar').attr("title", "show info");
-				$('#fechar').addClass("fechado");
-			});
-
-		} else {
-			$('.chamada').animate({
-				width : '22.7em',
-				height : '6em'
-			}, timers[4], function() {
-				$('#featured,.chamada h2,.chamada h3').show(timers[4]);
-			});
-			$(this).attr("title", "close");
-			$(this).removeClass("fechado");
-		}
-
-	}
-}
-
-function getHomeTitle(n) {
-	if (!$('#fechar').hasClass('fechado')) {
-		$('.chamada').animate(
-				{
-					'height' : '.9em'
-				},
-				timers[0],
-				'easeOutQuart',
-				function() {
-					n++;
-					var headings = $('.butcher li:nth-of-type(' + n + ') img')
-							.attr('alt').split('|');
-					changeTitle(headings, n);
-					showTitle();
-				});
-	} else {
-		n++;
-		var headings = $('.butcher li:nth-of-type(' + n + ') img').attr('alt')
-				.split('|');
-		changeTitle(headings, n);
-	}
-}
-function changeTitle(headings, n) {
-	var link = $('.butcher li:nth-of-type(' + n + ') a').attr('href');
-	if ($('.chamada h2').length == 0) {
-		$('.chamada h1').after('<a><h2> </h2><h3> </h3></a>');
-	}
-	$('.chamada a').attr('href', link);
-	$('.chamada h2').html(headings[0]);
-	$('.chamada h3').html(headings[1]);
-}
-
-function showTitle() {
-	if (!$('#fechar').hasClass('fechado')) {
-		$('.chamada').animate({
-			'height' : '6em'
-		}, timers[0], 'easeInQuart');
-	}
 }
 
 /*

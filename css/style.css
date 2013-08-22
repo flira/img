@@ -65,12 +65,6 @@ ______________________________________________________*/
  font-weight: 700
 }
 
-@font-face {
- font-family: 'code pro';
- src: url('fonts/276E3D_0_0.eot');src: url('fonts/276E3D_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/276E3D_0_0.woff') format('woff'),url('fonts/276E3D_0_0.ttf') format('truetype');
- font-weight: 800
-}
-
 /*	[0.2]Reset de navegador
 ______________________________________________________*/
 *{border:none;color:#666;font-weight:400;font-style:normal;text-align:left;margin:0;padding:0;text-decoration:none;text-shadow: 0 1px 1px rgba(249,249,244,.3);font-smoothing:}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:\201C \201D \2018 \2019}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}body{text-align:center;opacity:0;}
@@ -119,7 +113,7 @@ h1,
 span.tipo,
 #project .description h2,
 #stufflist h4,
-.chamada h3 {
+.chamada h2 {
 	font-weight:400
 }
 
@@ -129,6 +123,7 @@ strong,
 #featured,
 h2,
 h3,
+.chamada h1,
 .more,
 #crossmedia,
 .linguas abbr,
@@ -139,11 +134,6 @@ h3,
 #project section h1 span {
 	font-weight:700
 }
-
-.chamada h2 {
-	font-weight:800
-}
-
 i,
 em {
 	font-style:italic
@@ -154,7 +144,7 @@ span.tipo,
 #stufflist h4,
 #project .description h2,
 .firstWord,
-.chamada h3{
+.chamada h2{
 	text-transform:uppercase
 }
 
@@ -175,12 +165,10 @@ h3,
 #project .description h2 {
 	margin:0 0 1em
 }
-
-#home #news h1 {
+#home #news h1, {
 	margin:0 0 .1em
 }
 
-#home h1,
 #project .description h2 {
 	font-size:1em
 }
@@ -195,7 +183,7 @@ h3,
 .chamadapequena h2 {
 	font-size:1.65em
 }
-
+#home h1,
 #project h1 {
 	font-size:1.83em
 }
@@ -234,7 +222,9 @@ body {
 
 body>header>div,
 body>footer>div,
-#home div[role=main]>div:first-child {
+#home .slidectrlwrap,
+#home div[role=main]>div:first-child,
+.chamada>div {
 	width:95%;
 	padding:0 10px;
 	max-width:940px
@@ -258,7 +248,8 @@ div[role=main] img,
 .play,
 .slider,
 .slider *,
-.vimeo iframe  {
+.vimeo iframe,
+.chamada {
 	width:100%;
 	max-width:100%
 }
@@ -301,7 +292,9 @@ body>header>div,
 body>footer>div,
 div[role=main],
 #home div[role=main]>div:first-child,
-.sliderctrl {
+#home .slidectrlwrap,
+.sliderctrl,
+.chamada>div {
 	margin:auto
 }
 
@@ -334,7 +327,9 @@ body>footer nav.share,
 	margin:0 .5em 0 0;
 }
 
-#project>div>article>article>div>h1 {
+#project>div>article>article>div>h1,
+#home h1,
+#home h2 {
 	margin:0;
 }
 
@@ -413,8 +408,7 @@ ______________________________________________________*/
 html,
 body>header,
 body#home>footer,
-li.selecionado,
-.chamada {
+li.selecionado {
 	background:#f9f9f4
 }
 span.selecionado,
@@ -545,7 +539,7 @@ body#home>footer>div>div,
 /*	Acessibilidade.
 		Classe para usar o texto apenas em ferramentas
 		de acessibilidade */
-	.nodisplay,#featured,.chamada h2,.chamada h3 {
+	.nodisplay {
 		display:none
 	}
 
@@ -573,8 +567,7 @@ body#home>footer>div>div,
 	opacity:1
 }
 body>header,
-body>header nav:first-child li.selecionado,
-.chamada {
+body>header nav:first-child li.selecionado{
 	opacity:.9;
 	z-index:99;
 }
@@ -664,7 +657,8 @@ body#home>footer,
 #home div[role=main],
 .slidectrlwrap,
 .carregar h2 ,
-#works div[role=main] nav ul li {
+#works div[role=main] nav ul li,
+.chamada {
 	text-align:center
 }
 
@@ -711,10 +705,11 @@ ______________________________________________________*/
 body#home>footer,
 .slider li,
 .play,
+.chamada,
 .vimeo iframe {
 	position:absolute
 }
-.chamada,
+
 .slider,
 .slidectrlwrap,
 .sliderctrl,
@@ -735,10 +730,8 @@ ______________________________________________________*/
 	margin-bottom:.75em
 }
 .chamada {
-	top:15em;
-	padding:1em .5em 1em .75em;
-	width:1.9em;
-	height:1.1em
+	bottom:60px;
+	padding:1em 0;
 }
 .slider li,
 .play,
@@ -746,12 +739,15 @@ ______________________________________________________*/
 	top:0;
 	left:0;
 }
+#home .slidectrlwrap {
+		
+}
 .sliderctrl{
 	margin:.75em auto;
 	z-index:75;
 }
 #home div[role=main] .slidectrlwrap{
-	margin-top:-4em
+	margin-top:-4.5em
 }
 #home div[role=main] .sliderctrl{
 	margin-top:-2em
@@ -773,7 +769,8 @@ ______________________________________________________*/
 .sliderctrl button.selecionado{
 	background:#4b4b4b;
 	border-width:.1em;
-	padding:.2em;
+	height:1.25em;
+	width:1.2em;
 }
 #home #newslist li {
 	margin-bottom:2em;
@@ -800,28 +797,21 @@ body#home>footer>div>div:first-child {
 	margin:0 .57em -1.43em 0;
 	background:none
 }
-#fechar {
-	width:1em;
-	height:1.1em
-}
-#fechar.fechado {
-	margin-top:-.2em;
-	width:2em;
-	height:1.2em
-}
-
-body#home>footer .slidectrlwrap {
+#home .slidectrlwrap {
 	text-align:left;
-	margin-left:-.3em;
 }
-
-body#home>footer .sliderctrl button{
+body#home>footer .slidectrlwrap {
+	margin-left:-1.2em;
+}
+#home div[role=main] .sliderctrl{
+	margin-left:-.2em;
+}
+body#home .sliderctrl,body#home .sliderctrl li,body#home .sliderctrl button{
 	height:.9em;
-	width:.9em;
-	margin:0 .25em;
 }
-body#home>footer .sliderctrl button.selecionado {
-	margin-top:.4em;
+body#home .sliderctrl button{
+	width:.9em;
+	margin:.4em .25em 0;
 }
 
 /*	[4.2]our work
@@ -1218,12 +1208,12 @@ ______________________________________________________*/
 		position:static
 	}
 	#project #stufflist li,
-	.imgvid .grid li,
+	/*.imgvid .grid li,*/
 	#still li {
 		width:100%;
 	}
-	.imgvid .slider{
-		margin-bottom:2em;	
+	.imgvid .grid li{
+		width:49%;
 	}
 	.slider .play {
 		background-size:60px 51px
