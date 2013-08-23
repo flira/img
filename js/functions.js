@@ -532,7 +532,7 @@ function project() {
 	
 	function addIframes( ) {
 		for (var i=1;i<=$('.imgvid .slider li').length;i++) {
-		$('.slider .vimeo:nth-child('+i+') object').after('<iframe src="'+ $('.slider .vimeo:nth-child('+i+') object param[name=vimeo]').attr('value') +'?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=a0c9ca" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen style="display:none"></iframe>');
+		$('.slider .vimeo:nth-child('+i+') object').after('<iframe src="'+ $('.slider .vimeo:nth-child('+i+') object param[name=vimeo]').attr('value') +'" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="display:none"></iframe>');
 		}
 	}
 	

@@ -807,13 +807,15 @@ body#home>footer .slidectrlwrap {
 	margin-left:-.2em;
 }
 body#home .sliderctrl,body#home .sliderctrl li,body#home .sliderctrl button{
-	height:.9em;
+	height:12px;
 }
 body#home .sliderctrl button{
-	width:.9em;
+	width:12px;
 	margin:.4em .25em 0;
 }
-
+.sliderctrl {
+	font-size:13px	
+}
 /*	[4.2]our work
 ______________________________________________________*/
 #works form {
