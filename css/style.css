@@ -1058,17 +1058,12 @@ ______________________________________________________*/
 	body>header {
 		height:170px
 	}
-
-	#home .butcher {
-		margin-top:190px;
-	}
-	.chamada {
-		top:16em;
-	}
 	div[role=main] {
 		width:95%
 	}
-	
+	#home>footer {
+		position:relative
+	}
 	body>header>div,
 	body>footer>div,
 	div[role=main] {
@@ -1148,9 +1143,8 @@ ______________________________________________________*/
 		padding:0
 	}
 	
-	body>header,
-	body#home>footer {
-		position:static
+	body>header {
+		position:relative
 	}
 	
 	body#home>header {
@@ -1280,9 +1274,6 @@ ______________________________________________________*/
 	}
 	#home #fechar.fechado{
 		background-position:-9px -62px !important
-	}
-	#home .butcher {
-		margin-top:161px;
 	}
 	.twitter:hover {
 		background-position:-84px -21px
