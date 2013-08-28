@@ -1147,10 +1147,6 @@ ______________________________________________________*/
 		position:relative
 	}
 	
-	body#home>header {
-		position:absolute
-	}
-	
 	div[role=main] {
 		padding-top:45px
 	}
