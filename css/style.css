@@ -1062,7 +1062,7 @@ ______________________________________________________*/
 		width:95%
 	}
 	#home>footer {
-		position:relative
+		position:relative!important
 	}
 	body>header>div,
 	body>footer>div,
