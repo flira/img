@@ -478,12 +478,13 @@ function project() {
 		$('section.share h1 span').html('');
 	});
 	function createThumbs( ) {
-		$('.imgvid .slider').after('<div class="mask"><ul class="grid">'+$('.imgvid .slider').html()+'</ul></div>');
-		for(var i=1;i<=$('.imgvid .grid li').length;i++)
-			$('.imgvid .grid li:nth-child('+i+')').attr('id','tn'+i);
-		$('.imgvid .grid li').click(changeImg);
+		if($('.imgvid .slider li').length>1) {
+			$('.imgvid .slider').after('<div class="mask"><ul class="grid">'+$('.imgvid .slider').html()+'</ul></div>');
+			for(var i=1;i<=$('.imgvid .grid li').length;i++)
+				$('.imgvid .grid li:nth-child('+i+')').attr('id','tn'+i);
+			$('.imgvid .grid li').click(changeImg);
+		}
 	}
-	
 	function changeImg( ) {
 		var a = $(this).attr('id').split('n'), n=parseFloat(a[1]), that='.imgvid .slider li:nth-child('+n+')';		
 		if($(that).css('z-index')=='-1') {
