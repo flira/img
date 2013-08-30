@@ -534,7 +534,7 @@ function project() {
 	
 	function addIframes( ) {
 		for (var i=1;i<=$('.imgvid .slider li').length;i++) {
-		$('.slider .vimeo:nth-child('+i+') object').after('<iframe src="'+ $('.slider .vimeo:nth-child('+i+') object param[name=vimeo]').attr('value') +'" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="display:none"></iframe>');
+			$('.slider .vimeo:nth-child('+i+') object').after('<iframe src="'+ $('.slider .vimeo:nth-child('+i+') object param[name=vimeo]').attr('value') +'" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="display:none"></iframe>');
 		}
 	}
 	
@@ -551,9 +551,12 @@ function project() {
 	function replaceObjects( ) {
 		$('.imgvid .vimeo object param').remove();
 		for (var i=1;i<=$('.imgvid .slider li').length;i++) {
-			$('.imgvid .slider li:nth-child('+i+') object').replaceWith('<img src="'+$('.imgvid .slider li:nth-child('+i+') object').attr('data')+'" alt="'+$('.imgvid .slider li:nth-child('+i+') object').html()+' "/>');
-		}
-		
+			if(!$('.imgvid .slider li:nth-child('+i+')').hasClass('vimeo')) {
+				$('.imgvid .slider li:nth-child('+i+') object').before('<a href="'+$('.imgvid .slider li:nth-child('+i+') object param[name=lightbox]').attr('value')+'" data-lightbox="mainlightbox'+i+'" class="lightbox"> </a>');
+			}
+			$('.imgvid .slider li:nth-child('+i+') object').replaceWith('<img src="'+$('.imgvid .slider li:nth-child('+i+') object').attr('data')+'" alt="'+$('.imgvid .slider li:nth-child('+i+') object').text()+' "/>');
+			$('.imgvid li:nth-child('+i+') .lightbox').append($('.imgvid .slider li:nth-child('+i+') img'));
+		}		
 	}
 	
 	function playVideo () {
