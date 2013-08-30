@@ -277,6 +277,9 @@ div[role=main] img,
 	width:66%;
 	padding-left:0
 }
+#project .description>section[itemprop=description] {
+	min-height:100px;
+}
 #home #newslist {
 	height:3em
 }
@@ -1083,7 +1086,7 @@ ______________________________________________________*/
 	body>header nav li,
 	#escolhalingua li,
 	body>header nav:first-child li.selecionado {
-		padding:33px 0 9px
+		padding:28px 0 9px
 	}
 	
 	body>header nav li:nth-child(2) {
@@ -1146,7 +1149,7 @@ ______________________________________________________*/
 	body>header {
 		position:relative
 	}
-	
+		
 	div[role=main] {
 		padding-top:45px
 	}
