@@ -486,6 +486,7 @@ function project() {
 			$('.imgvid .grid li').click(changeImg);
 		}
 	}
+	
 	function changeImg( ) {
 		var a = $(this).attr('id').split('n'), n=parseFloat(a[1]), that='.imgvid .slider li:nth-child('+n+')';		
 		if($(that).css('z-index')=='-1') {
