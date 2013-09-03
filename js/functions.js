@@ -491,8 +491,8 @@ function project() {
 	}
 	
 	function changeImg( ) {
-		var a = $(this).attr('id').split('n'), n=parseFloat(a[1]), that='.imgvid .slider li:nth-child('+n+')';		
-		if($(that).css('z-index')=='-1') {
+		var a = $(this).attr('id').split('n'), n=parseFloat(a[1]), that='.imgvid .slider li:nth-child('+n+')';
+		if($(that).css('z-index')=='-1' && !$(this).hasClass('noclick')) {
 			$('.imgvid .slider li').css('z-index','-1');
 			$(that).css({
 				'display':'block',
