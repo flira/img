@@ -210,12 +210,15 @@ function nextSlide(a) {
 				$('.slider li:nth-of-type(' + i + ')').css('opacity', 0);
 		$('.slider li[style*="opacity: 1"]').first().animate({
 			'opacity' : 0
-		}, timers[2], 'easeInOutQuart');
+		}, timers[2], 'easeInOutQuart', function(){
+			$('.slider li[style*="opacity: 0"]').css("display","none");
+		});
 	}
 }
 // função para passar para a imagem anterior nos sliders
 function previousSlide(a) {
 	changeCtrl(a, 'div[role=main] ');
+	$('.slider li:nth-of-type(' + a + ')').css("display","list-item");
 	$('.slider li:nth-of-type(' + a + ')').animate({
 		'opacity' : 1
 	}, timers[2], 'easeInOutQuart', function() {
