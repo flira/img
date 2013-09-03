@@ -556,7 +556,7 @@ function project() {
 	function replaceObjects( ) {
 		$('.imgvid .vimeo object param').remove();
 		for (var i=1;i<=$('.imgvid .slider li').length;i++) {
-			if(!$('.imgvid .slider li:nth-child('+i+')').hasClass('vimeo')) {
+			if(!$('.imgvid .slider li:nth-child('+i+')').hasClass('vimeo') && $('.imgvid .slider li:nth-child('+i+') object param').length != 0) {
 				$('.imgvid .slider li:nth-child('+i+') object').before('<a href="'+$('.imgvid .slider li:nth-child('+i+') object param[name=lightbox]').attr('value')+'" data-lightbox="mainlightbox'+i+'" class="lightbox"> </a>');
 			}
 			$('.imgvid .slider li:nth-child('+i+') object').replaceWith('<img src="'+$('.imgvid .slider li:nth-child('+i+') object').attr('data')+'" alt="'+$('.imgvid .slider li:nth-child('+i+') object').text()+' "/>');
