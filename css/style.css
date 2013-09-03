@@ -512,6 +512,9 @@ nav.share,
 #project .imgvid .slider li {
 	display:none
 }
+#project .imgvid .slider li.noclick {
+	display:none!important
+}
 body#home>footer>div>div,
 #works #stufflist a,
 #about article{
