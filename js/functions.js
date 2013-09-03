@@ -243,7 +243,7 @@ function changeSlide() {
 
 function resizeSlider() {
 	$('.slider li').width("100%");
-	$('.slider').height($('.slider li').height());
+	$('.slider').height($('.slider li img').height());
 	$('.sliderctrl button').css('border-width', calculateThick());
 	$('.sliderctrl button.selecionado').css('border-width', '1px');
 }
