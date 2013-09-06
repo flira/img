@@ -150,6 +150,7 @@ span.tipo,
 
 /*	[1.2]Tamanhos
 ______________________________________________________*/
+
 h1 {
 	font-size:3.9em;
 	margin:0 0 .2em
@@ -165,9 +166,11 @@ h3,
 h2,
 h3,
 #stufflist h4,
-#home #news h1,
-#project .description h2 {
+#home #news h1,{
 	margin:.5em 0 .1em
+}
+#project .description h2 {
+	margin:.5em 0 1em
 }
 #home #news h1, {
 	margin:0 0 .1em
@@ -180,7 +183,7 @@ h3,
 #project article>header>a:first-child,
 #project article>div>h1 {
 	font-size:2.7em;
-	line-height: 1em
+	line-height: 1.1em
 }
 .chamadagrande h2 {
 	font-size:47px
@@ -191,6 +194,9 @@ h3,
 #home h1,
 #project h1 {
 	font-size:1.83em
+}
+h1,h2,h3,h4,h5,h6 {
+	padding-left:.05em!Important
 }
 
 /*	[1.3]Tipos de lista e spans especiais
