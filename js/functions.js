@@ -72,7 +72,6 @@ function init() {
 			|| $('body').attr('id') == 'contact')
 		slider();
 	addGridBreak();
-	resizeSpecialty();
 	$(window).resize(resizeSpecialty);
 }
 
@@ -109,32 +108,6 @@ function addGridBreak() {
 	$('ul.grid').append('<li class="break"></li>');
 }
 
-/*
-	Serve para a assinatura da marca no menu. Faz com que a linha
-	abaixo do "crossmedia studio" da logo seja da mesma largura dela.
-*/
-function resizeSpecialty() {
-	var c,b,a=parseFloat($('#assinatura').css('font-size'));
-	if($('#assinatura').width()<$('#crossmedia').width()) {
-		while($('#assinatura').width()<$('#crossmedia').width()) {
-			b = Math.abs($('#crossmedia').width() - $('#assinatura').width());
-			a++ ;
-			$('#assinatura').css('font-size',a+'px');
-			c = Math.abs($('#crossmedia').width() - $('#assinatura').width());
-		}
-	} else {
-		while($('#assinatura').width()>$('#crossmedia').width()) {
-			b = Math.abs($('#crossmedia').width() - $('#assinatura').width());
-			a-- ;
-			$('#assinatura').css('font-size',a+'px');
-			c = Math.abs($('#crossmedia').width() - $('#assinatura').width());
-		}
-	}
-	if(b<c) {
-		a--;
-		$('#assinatura').css('font-size',a+'px');
-	}
-}
 
 // função para ocultar a descrição de cada projeto
 function resizeHeight() {
@@ -243,7 +216,7 @@ function changeSlide() {
 
 function resizeSlider() {
 	$('.slider li').width("100%");
-	$('.slider').height($('.slider li img').height());
+	$('.slider').height($('.slider li img:visible').height());
 	$('.sliderctrl button').css('border-width', calculateThick());
 	$('.sliderctrl button.selecionado').css('border-width', '1px');
 }
