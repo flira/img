@@ -315,6 +315,7 @@ function resizeButcher() {
 				redefineImgSize(newHeight, newMargin, i);
 		}
 	} else {
+		
 		$('.butcher li').css({'height':'auto','width':'100%','max-width':'100%'});
 		$('.butcher img').css({'height':'auto','width':'100%','max-width':'100%'});
 		$('.butcher').css({'height':$('.butcher img').height(),'width':'100%','max-width':'100%'});
@@ -347,6 +348,11 @@ function resetImgSize(i, newMargin) {
 function fhome() {
 	resizeButcher();
 	$(window).resize(resizeButcher);
+	if( $("html").hasClass('touch') ) {
+		$( window ).on( "orientationchange", function( ) {
+			resizeButcher();
+		});
+	}
 	news();
 }
 

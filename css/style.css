@@ -169,8 +169,8 @@ h3,
 h2,
 h3,
 #stufflist h4,
-#home #news h1,{
-	margin:.5em 0 .1em
+#home #news h1{
+	margin:.5em 0 .25em
 }
 #project .description h2 {
 	margin:.5em 0 1em
@@ -295,7 +295,7 @@ div[role=main] img,
 	min-height:100px;
 }
 #home #newslist {
-	height:3em
+	height:3.5em
 }
 .butcher,
 #home div[role=main]>div:first-child,
@@ -759,12 +759,12 @@ ______________________________________________________*/
 	top:0;
 	left:0;
 }
-#home .slidectrlwrap {
-		
-}
 .sliderctrl{
 	margin:.75em auto;
 	z-index:75;
+}
+#home .sliderctrl {
+	margin:.25em auto .75em
 }
 #home div[role=main] .slidectrlwrap{
 	margin-top:-4.5em
@@ -1040,9 +1040,16 @@ ______________________________________________________*/
 #contact .slider {
 	margin-top:-6px
 }
+#contact h2:first-child {
+	margin-top:0px
+}
 #contact h1 {
 	margin-bottom:4px
 }
+.share {
+	margin: .25em 0 0;
+}
+
 
 /*	[4.6]Lightbox
 	by Lokesh Dhakar - http://www.lokeshdhakar.com
