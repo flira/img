@@ -52,37 +52,32 @@ ______________________________________________________*/
  src: url('fonts/276E3D_2_0.eot');src: url('fonts/276E3D_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/276E3D_2_0.woff') format('woff'),url('fonts/276E3D_2_0.ttf') format('truetype');
  font-weight: 200
 }
-
 @font-face {
  font-family: 'code pro';
  src: src: url('fonts/276E3D_1_0.eot');src: url('fonts/276E3D_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/276E3D_1_0.woff') format('woff'),url('fonts/276E3D_1_0.ttf') format('truetype');
  font-weight: 400
 }
-
 @font-face {
  font-family: 'code pro';
  src: url('fonts/276E3D_3_0.eot');src: url('fonts/276E3D_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/276E3D_3_0.woff') format('woff'),url('fonts/276E3D_3_0.ttf') format('truetype');
  font-weight: 700
 }
-
 /*	[0.2]Reset de navegador
 ______________________________________________________*/
-*{border:none;color:#666;font-weight:400;font-style:normal;text-align:left;margin:0;padding:0;text-decoration:none;text-shadow: 0 1px 1px rgba(249,249,244,.3);	word-spacing: 0.12em;letter-spacing: -0.01em}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:\201C \201D \2018 \2019}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}body{text-align:center;opacity:0;}
-
-
+*{border:none;color:#666;font-weight:400;font-style:normal;text-align:left;margin:0;padding:0;text-decoration:none;text-shadow: 0 1px 1px rgba(249,249,244,.3);	word-spacing: 0.12em;letter-spacing: -0.01em}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:\201C \201D \2018 \2019}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}body{text-align:center;opacity:0
+}
 /*	[1]Tipografia
 ______________________________________________________*/
 html,
 body {
-	font:.9em/1.3 'code pro',sans-serif;
+	font:.9em/1.3 'code pro',sans-serif
 }
-
 html,
 body,
 a {
 	color: #4b4b4b
 }
-
 ::selection {
 	background-color:#4b4b4b;
 	color:#f9f9f4
@@ -91,12 +86,10 @@ a {
 	background-color:#4b4b4b;
 	color:#f9f9f4
 }
-
 #crossmedia,
 body>header nav a {
 	color:#414442
 }
-
 /*	[1.1]Pesos e italicos
 ______________________________________________________*/
 h1,
@@ -109,14 +102,12 @@ h1,
 #project article>header>a:first-child {
 	font-weight:200
 }
-
 span.tipo,
 #project .description h2,
 #stufflist h4,
 .chamada h2 {
 	font-weight:400
 }
-
 a,
 b,
 strong,
@@ -138,7 +129,6 @@ i,
 em {
 	font-style:italic
 }
-
 #works label,
 span.tipo,
 #stufflist h4,
@@ -147,7 +137,6 @@ span.tipo,
 .chamada h2{
 	text-transform:uppercase
 }
-
 /*	[1.2]Tamanhos
 ______________________________________________________*/
 
@@ -155,7 +144,6 @@ h1 {
 	font-size:3.9em;
 	margin:0
 }
-
 h2,
 h3,
 #stufflist h4,
@@ -165,7 +153,6 @@ h3,
 #assinatura {
 	font-size: 14px
 }
-
 h2,
 h3,
 #stufflist h4,
@@ -175,14 +162,12 @@ h3,
 #project .description h2 {
 	margin:.5em 0 1em
 }
-#home #news h1, {
+#home #news h1 {
 	margin:0 0 .1em
 }
-
 #project .description h2 {
 	font-size:1em
 }
-
 #project article>header>a:first-child,
 #project article>div>h1 {
 	font-size:2.7em;
@@ -201,7 +186,6 @@ h3,
 h1,h2,h3,h4,h5,h6 {
 	padding-left:.05em!Important
 }
-
 /*	[1.3]Tipos de lista e spans especiais
 ______________________________________________________*/
 nav *,
@@ -211,20 +195,16 @@ nav *,
 .imgvid ul{
 	list-style:none
 }
-
 .more:before {
 	content:'[+'
 }
-
 .more.ext {
 	background: url(img/more.png) right center no-repeat;
-	padding-right:1.25em;
+	padding-right:1.25em
 }
-
 .more:after {
 	content:']'
 }
-
 /*	[2]Divisórias
 
 	[2.1]Dimensões
@@ -233,7 +213,6 @@ html,
 body {
 	min-width:300px
 }
-
 body>header>div,
 body>footer>div,
 #home .slidectrlwrap,
@@ -243,12 +222,10 @@ body>footer>div,
 	padding:0 10px;
 	max-width:940px
 }
-
 div[role=main] {
 	width:100%;
 	max-width:960px
 }
-
 body>header,
 body#home>footer,
 #home div[role=main],
@@ -267,32 +244,28 @@ div[role=main] img,
 	width:100%;
 	max-width:100%
 }
-
 .botao.share {
 	width:26px;
 	height:26px
 }
-
 .break {
 	height:0!important;	
 	margin:0!important;
 	padding:0!important;
-	min-width:100%;
+	min-width:100%
 }
-
 #contact div[role=main] div>div,
 #project .description>section {
 	width:31%;
 	padding-left:2%
 }
-
 #contact div[role=main] div>div:first-of-type,
 #project .description>section[itemprop=description] {
 	width:66%;
 	padding-left:0
 }
 #project .description>section[itemprop=description] {
-	min-height:100px;
+	min-height:100px
 }
 #home #newslist {
 	height:3.5em
@@ -302,7 +275,6 @@ div[role=main] img,
 #project section[itemprop=author] div {
 	height:0
 }
-
 /*	[2.2]Margens internas e externas
 ______________________________________________________*/
 body>header>div,
@@ -314,46 +286,36 @@ div[role=main],
 .chamada>div {
 	margin:auto
 }
-
 #about section {
 	margin:1% 0 5% 2%
 }
-
 hr {
 	margin:.7em 0 -.3em
 }
-
 body#home>footer nav.share {
 	margin:0 0 -10px 8px
 }
-
 nav.share li {
 	margin:0 4px!important
 }
-
 body>footer p {
 	margin:1.42em 0
 }
-
 body>footer nav.share,
 #contact div[role=main] ul li {
 	margin:15px 0 0
 }
-
 #home #news h2 {
-	margin:0 .5em 0 0;
+	margin:0 .5em 0 0
 }
-
 #project>div>article>article>div>h1,
 #home h1,
 #home h2 {
-	margin:0;
+	margin:0
 }
-
 div[role=main] {
 	padding-top:180px
 }
-
 body>header nav:first-child li:first-child,
 body>header nav:first-child li:first-child:hover,
 #home div[role=main],
@@ -362,18 +324,15 @@ body>header nav:first-child li:first-child:hover,
 #escolhalingua li a {
 	padding:0
 }
-
 #contact div[role=main] h2:first-child
 #contact .slider li {
-	margin-top:0;
+	margin-top:0
 }
-
 #about section:first-of-type,
 nav.share li:first-child,
 #works label:first-of-type {
 	margin-left:0!important
 }
-
 /*	[2.3]Bordas
 ______________________________________________________*/
 body#home>footer,
@@ -382,13 +341,11 @@ body>footer div,
 #project article h1 {
 	border-top:solid 1px #bcbcb9
 }
-
 body#home>footer>div div,
 body#home>footer>div,
 #project .description>section[itemprop=description] h1{
 	border-top:none
 }
-
 body>header,
 li.selecionado a,
 body>footer a:hover,
@@ -399,17 +356,14 @@ hr,
 #project div[itemprop=breadcrumb] {
 	border-bottom:solid 1px #bcbcb9
 }
-
 #project article h1,
 #home h1 {
 	border-bottom:none
 }
-
 #escolhalingua li.selecionado a,
 #works form label span {
 	border:solid 1px #4b4b4b
 }
-
 body>header nav:first-child li:first-child:hover a,
 body#home>footer>div>div:first-child,
 .botao:hover,
@@ -419,7 +373,6 @@ body#home>footer>div>div:first-child,
 #project article>header a:hover {
 	border:none!important
 }
-
 /*	[2.4]Fundos
 ______________________________________________________*/
 html,
@@ -449,50 +402,20 @@ span.selecionado,
 	background-image:url(img/tudo.png);
 	background-repeat:no-repeat
 }
-#marca {
-	background-position:0 -90px
-}
-a.clink {
-	background-position:0 0
-}
-a.clink:hover {
-	background-position:0 -28px
-}
-a.email {
-	background-position:-28px 0
-}
-a.email:hover {
-	background-position:-28px -28px
-}
-.vimeo {
-	background-position:-56px 0
-}
-body>footer .vimeo {
-	background-position:-56px -56px
-}
-.vimeo:hover {
-	background-position:-56px -28px
-}
-.facebook {
-	background-position:-84px 0
-}
-body>footer .facebook {
-	background-position:-84px -56px
-}
-.facebook:hover {
-	background-position:-84px -28px
-}
-.twitter {
-	background-position:-112px 0
-}
-body>footer .twitter {
-	background-position:-112px -56px
-}
-.twitter:hover {
-	background-position:-112px -28px
-}
-
-
+#marca {background-position:0 -90px}
+a.clink {background-position:0 0}
+a.clink:hover {background-position:0 -28px}
+a.email {background-position:-28px 0}
+a.email:hover {background-position:-28px -28px}
+.vimeo {background-position:-56px 0}
+body>footer .vimeo {background-position:-56px -56px}
+.vimeo:hover {background-position:-56px -28px}
+.facebook {background-position:-84px 0}
+body>footer .facebook {background-position:-84px -56px}
+.facebook:hover {background-position:-84px -28px}
+.twitter {background-position:-112px 0}
+body>footer .twitter {background-position:-112px -56px}
+.twitter:hover {background-position:-112px -28px}
 /*	[2.5]Comportamento de display, overflow e opacidade
 ______________________________________________________*/
 .botao,
@@ -505,7 +428,6 @@ ______________________________________________________*/
 span.triangulo {
 	display:block
 }
-
 #logo,
 nav.share,
 .grid li,
@@ -534,7 +456,6 @@ body#home>footer>div>div,
 #about article{
 	overflow:auto
 }
-
 .butcher *,
 .mask,
 #home div[role=main] div,
@@ -547,34 +468,28 @@ body#home>footer>div>div,
 #works #stufflist li {
 	overflow:hidden
 }
-
 #project div[role=main]>article,
 #project div[role=main]>article>header,
 #home div[role=main]>div:first-child,
 .slider{
 	overflow:visible
 }
-
- @media screen, print {
+@media screen, print {
 /*	Acessibilidade.
 		Classe para usar o texto apenas em ferramentas
 		de acessibilidade */
 	.nodisplay {
 		display:none
 	}
-
-	#works input[type=radio] {
+#works input[type=radio] {
 		opacity:0
 	}
 }
-
 @media aural {
 	.slider li:last-of-type,.break {
-		display:none;
-	}
+		display:none
 }
-
-
+}
 .slider {
 	opacity:0
 }
@@ -589,7 +504,7 @@ body#home>footer>div>div,
 body>header,
 body>header nav:first-child li.selecionado{
 	opacity:.9;
-	z-index:99;
+	z-index:99
 }
 #project section[itemprop=author] h1,
 #fechar,
@@ -598,7 +513,6 @@ body>header nav:first-child li.selecionado{
 .vimeo{
 	cursor:pointer
 }
-
 /*	[2.6]Divisórias específicas
 
 	[2.6.1]Menu
@@ -607,70 +521,58 @@ ______________________________________________________*/
 body>header>div {
 	padding-top:31px
 }
-
 body>header nav:first-child li.selecionado {
 	padding:68px 0 18px
 }
-
 body>header nav:first-child li:first-child,
 body>header nav:first-child li:first-child:hover {
 	margin:0 14% 0 0
 }
-
 #escolhalingua li a {
 	padding:0 10px 4px
 }
-
 body>header {
 	height:135px;
-	width:100%;
+	width:100%
 }
-
 body>header nav li,
 #escolhalingua li {
 	padding:81px 0 9px;
 	margin-left:4%
 }
-
 li.selecionado a {
 	opacity:1;
 	padding:0 0 5px
 }
-
 #marca {
 	padding:34px 0 16px 153px;
 	height:34px;
 	width:151px
 }
-
 #escolhalingua li {
 	margin:0;
 	background:none
 }
-
 /*	[2.6.2]footer
 ______________________________________________________*/
 body>footer {
 	font-size:.85em;
 	padding: 14px 0 25px
 }
-
 #logo {
 	background:url(img/logo-footerH.png) center center no-repeat;
 	width:27px;
 	height:16px;
 	margin:0 .2em -.4em .4em
 }
-
 /*	[3]Especificações de alinhamento
 
 	[3.1]Por texto
 ______________________________________________________*/
 .grid,
 #marca {
-	text-align:justify;
+	text-align:justify
 }
-
 body,
 body>header,
 body#home>footer,
@@ -681,13 +583,11 @@ body#home>footer,
 .chamada {
 	text-align:center
 }
-
 .chamadagrande,
 .chamadapequena,
 #contact div[role=main] div>div {
 	vertical-align:text-top
 }
-
 /*	[3.1]Por float
 ______________________________________________________*/
 .dir,
@@ -698,7 +598,6 @@ body>footer nav,
 #fechar {
 	float:right
 }
-
 .esq,
 .initial,
 nav li,
@@ -712,14 +611,12 @@ body#home>footer>div>div:first-child,
 #project dt {
 	float:left
 }
-
 body#home>footer nav,
 .chamadapequena,
 .break,
 #marca {
 	float:none
 }
-
 /*	[3.1]Posicionamento
 ______________________________________________________*/
 body#home>footer,
@@ -729,7 +626,6 @@ body#home>footer,
 .vimeo iframe {
 	position:absolute
 }
-
 .slider,
 .slidectrlwrap,
 .sliderctrl,
@@ -740,7 +636,6 @@ span.triangulo,
 body>header {
 	position:fixed
 }
-
 /*	[4]Estilo de páginas
 	(aplicados ao id da tag "body")
 
@@ -751,17 +646,17 @@ ______________________________________________________*/
 }
 .chamada {
 	bottom:60px;
-	padding:1em 0;
+	padding:1em 0
 }
 .slider li,
 .play,
 .vimeo iframe {
 	top:0;
-	left:0;
+	left:0
 }
 .sliderctrl{
 	margin:.75em auto;
-	z-index:75;
+	z-index:75
 }
 #home .sliderctrl {
 	margin:.25em auto .75em
@@ -772,11 +667,9 @@ ______________________________________________________*/
 #home div[role=main] .sliderctrl{
 	margin-top:-2em
 }
-
 .sliderctrl, .sliderctrl li, .sliderctrl button{
-	height:1.2em;
+	height:1.2em
 }
-
 .sliderctrl button{
 	background:#b2b2b0;
 	border:solid .35em #dfdfdb; 
@@ -785,19 +678,18 @@ ______________________________________________________*/
 	margin:0 .5em;
 	float:none!important
 }
-
 .sliderctrl button.selecionado{
 	background:#4b4b4b;
 	border-width:.1em;
 	height:1.25em;
-	width:1.25em;
+	width:1.25em
 }
 #home #newslist li {
-	margin-bottom:2em;
+	margin-bottom:2em
 }
 body#home>footer {
 	z-index:90;
-	bottom:0;
+	bottom:0
 }
 body#home>footer>div>div {
 	border-left:solid 1px #bcbcb9;
@@ -806,7 +698,6 @@ body#home>footer>div>div {
 body#home>footer>div>div p {
 	margin-top:2.5em
 }
-
 body#home>footer>div>div:first-child {
 	width:60%;
 	margin-right:8%
@@ -818,20 +709,20 @@ body#home>footer>div>div:first-child {
 	background:none
 }
 #home .slidectrlwrap {
-	text-align:left;
+	text-align:left
 }
 body#home>footer .slidectrlwrap {
-	margin-left:-1.2em;
+	margin-left:-1.2em
 }
 #home div[role=main] .sliderctrl{
-	margin-left:-.2em;
+	margin-left:-.2em
 }
 body#home .sliderctrl,body#home .sliderctrl li,body#home .sliderctrl button{
-	height:12px;
+	height:12px
 }
 body#home .sliderctrl button{
 	width:12px;
-	margin:.4em .25em 0;
+	margin:.4em .25em 0
 }
 .sliderctrl {
 	font-size:13px	
@@ -841,11 +732,9 @@ ______________________________________________________*/
 #works form {
 	margin-top:-3.5em
 }
-
 #works input[type=radio] {
 	margin-right:-15px
 }
-
 #works form label span {
 	height:15px;
 	width:15px;
@@ -866,48 +755,46 @@ ______________________________________________________*/
 	padding-bottom:1em
 }
 #works .break {
-	margin:-2em 0!important;	
+	margin:-2em 0!important
 }
 .chamadapequena {
-	margin:.2em 0;	
+	margin:.2em 0
 }
 .macfix #works .chamadagrande {
-	margin-top:4px;	
+	margin-top:4px
 }
 .macfix #works .chamadapequena {
-	margin-top:3px;	
+	margin-top:3px
 }
 .chamadagrande {
-	margin:.2em 0 -2em;	
+	margin:.2em 0 -2em
 }
 .chamadagrande {
 	width:49%	
 }
 .chamadapequena {
-	width:23.5%;
+	width:23.5%
 }
 .carregar {
-	margin-top:1em!important;	
+	margin-top:1em!important
 }
 .carregar {
 	border:solid 1px #cfcfcb
 }
 .carregar h2 {
 	color:#cfcfcb;
-	font-size:2.1em;
+	font-size:2.1em
 }
 span.triangulo {
 	background:url(img/borderworks.png) no-repeat;
 	width:12px;
 	height:12px;
-	margin:-12px 0 0;
+	margin:-12px 0 0
 }
 .macfix span.triangulo,
 #project span.triangulo {
-	margin:-13px 0 0;
+	margin:-13px 0 0
 }
-
-
 /*	[4.2.1]Media query especial para trabalhos
 ______________________________________________________*/
 @media screen and (max-width: 800px) {
@@ -915,10 +802,10 @@ ______________________________________________________*/
 		margin:0 0 .3em;
 		width:100%	
 	}
-	.chamadapequena {
+.chamadapequena {
 		width:49%	
 	}
-	.chamadagrande {
+.chamadagrande {
 		float:none!important;
 		margin-left:0!important;
 		margin-right:0!important	
@@ -928,65 +815,54 @@ ______________________________________________________*/
 	.chamadagrande {
 		margin:0
 	}
-	 .chamadapequena {
+.chamadapequena {
 		 width: 100%
 	}
-	#works #stufflist h2 {
+#works #stufflist h2 {
 		font-size:2.7em!important
 	}
-	#stufflist .chamadagrande h2 {
+#stufflist .chamadagrande h2 {
 		margin:.1em 0
 	}
 }
-
 /*	[4.2.2]Lista de trabalhos e "Mais disso"
 ______________________________________________________*/
 #stufflist h2 {
 	padding:.32em 0 0;
-	margin:0;
+	margin:0
 }
 .macfix #works #stufflist .chamadapequena h2 {
-	padding:6px 0 0;
+	padding:6px 0 0
 }
-
 #stufflist .chamadagrande h2 {
 	padding:.23em 0 0;
 	margin:0
 }
-
 .macfix #works #stufflist .chamadagrande h2 {
-	padding:9px 0 0;
+	padding:9px 0 0
 }
-                                
 #stufflist img {
-	border-bottom:#c1c1c0 1px solid;
+	border-bottom:#c1c1c0 1px solid
 }
-
-
 #stufflist h4:before {
 	content:' | '	
 }
-
-
 /*	[4.2.3]our work - interna
 ______________________________________________________*/
 .initial {
 	font-size:4.625em;
-	margin:-.23em .1em -.3em 0;
+	margin:-.23em .1em -.3em 0
 }
-
 #project article>header>a:first-child {
 	margin:0 .2em 0 -.6em;
 	vertical-align:sub
 }
-
 #project div[itemprop=breadcrumb] {
 	font-size:2.15em;
 	height:2em;
 	margin:0 -2em .5em 0;
 	padding-bottom:.37em
 }
-
 #project article section h1 {
 	padding:.2em 0
 }
@@ -1024,7 +900,6 @@ ______________________________________________________*/
 	width:24%;
 	max-width: 24%
 }
-
 /*	[4.4]Sobre
 ______________________________________________________*/
 #about section {
@@ -1033,8 +908,6 @@ ______________________________________________________*/
 #about h1 {
 	margin-bottom:13px
 }
-
-
 /*	[4.5]Contato
 ______________________________________________________*/
 #contact .slider {
@@ -1047,10 +920,8 @@ ______________________________________________________*/
 	margin-bottom:4px
 }
 .share {
-	margin: .25em 0 0;
+	margin: .25em 0 0
 }
-
-
 /*	[4.6]Lightbox
 	by Lokesh Dhakar - http://www.lokeshdhakar.com
 ______________________________________________________*/
@@ -1079,8 +950,6 @@ body:after{content:url(img/close.png) url(img/loading.gif) url(img/prev.png) url
 .lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(img/close.png) top right no-repeat;text-align:right;outline:none;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity:0.7}
 .lb-data .lb-close:hover{cursor:pointer;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}
 .lb-outerContainer:after,.lb-dataContainer:after{content:"";display:table;clear:both}
-
-
 /*	[5]Media queries
 
 	[5.1]Para larguras menores que 900px
@@ -1090,74 +959,64 @@ ______________________________________________________*/
 	body#home>footer>div>div {
 		float:none!important
 	}
-	
-	body#home>footer>div>div {
+body#home>footer>div>div {
 		width:100%!important
 	}
-	
-	body>header {
+body>header {
 		height:170px
 	}
-	div[role=main] {
+div[role=main] {
 		width:95%
 	}
-	#home>footer {
+#home>footer {
 		position:relative!important
 	}
-	body>header>div,
+body>header>div,
 	body>footer>div,
 	div[role=main] {
 		padding-left:2.5%;
 		padding-right:2.5%
 	}
-
-	div[role=main] {
+div[role=main] {
 		padding-top:235px
 	}
-	
-	#home div[role=main] {
+#home div[role=main] {
 		padding:0
 	}
-	
-	
-	body>header nav li,
+body>header nav li,
 	#escolhalingua li,
 	body>header nav:first-child li.selecionado {
 		padding:28px 0 9px
 	}
-	
-	body>header nav li:nth-child(2) {
+body>header nav li:nth-child(2) {
 		margin-left:0
 	}
-	
-	#project div[role=main]>article>header>a:first-child {
+#project div[role=main]>article>header>a:first-child {
 		display:none
 	}
-	#still li {
+#still li {
 		width:33%;
-		max-width: none;
-	}
-	#still li img{
+		max-width: none
+}
+#still li img{
 		max-height:none;
 		max-width:100%
 	}
-	.imgvid .grid li {
+.imgvid .grid li {
 		width:49.5%;
-		max-width:none;	
-	}
-	body#home>footer>div>div {
+		max-width:none
+}
+body#home>footer>div>div {
 		 border-top:solid 1px #bcbcb9;
 		 border-left:none;
 		 padding:14px 0 20px
 	}
-	
-	#logo {
+#logo {
 		 background-size:contain;
 		 width:2em;
 		 height:1.5em
 	}
 }
-
 /*	[5.2]Para larguras menores que 720px
 ______________________________________________________*/
 @media screen and (max-width: 720px) {
@@ -1169,69 +1028,57 @@ ______________________________________________________*/
 	#project .description>section[itemprop=description] {
 		float:none
 	}
-	
-	#about section,
+#about section,
 	#contact div[role=main] div>div,
 	#contact div[role=main] div>div:first-of-type,
 	#project .description>section,
 	#project .description>section[itemprop=description] {
 		width:100%
 	}
-	
-	#contact div[role=main] div>div,
+#contact div[role=main] div>div,
 	#project .description>section {
 		padding:0
 	}
-	
-	body>header {
+body>header {
 		position:relative
 	}
-		
-	div[role=main] {
+div[role=main] {
 		padding-top:45px
 	}
-	
-	#about section {
+#about section {
 		margin:1% 0 5%
 	}
-	
-	#contact div[role=main] div>div {
+#contact div[role=main] div>div {
 		border-top:solid 1px #bcbcb9
 	}
-	
-  #contact div[role=main] div>div:first-of-type {
-		border-top:none;
-	}
-  
-	#contact .sliderctrl {
-		margin-bottom:1.5em;  
-	}
-  
-	#works form {
+#contact div[role=main] div>div:first-of-type {
+		border-top:none
+}
+#contact .sliderctrl {
+		margin-bottom:1.5em
+}
+#works form {
 		margin:0 0 1em
 	}
-	#project h1 {
+#project h1 {
 		display:block!important
 	}
-	
-	#project div[itemprop=breadcrumb] {
+#project div[itemprop=breadcrumb] {
 		height:auto;
 		margin-right:0
 	}
-	#project #stufflist li,
+#project #stufflist li,
 	#still li{
 		width:49%;
 		margin-bottom:1%
 	}
-
-	.slider .play {
+.slider .play {
 		background-size:120px 102px
 	}
-	.grid .play {
+.grid .play {
 		background-size:45px 45px
 	}
 }
-
 /*	[5.3]Para larguras menores que 400px
 ______________________________________________________*/
 @media screen and (max-width: 400px) {
@@ -1239,134 +1086,115 @@ ______________________________________________________*/
 	body>header {
 		position:static
 	}
-	#project #stufflist li,
+#project #stufflist li,
 	/*.imgvid .grid li,*/
 	#still li {
-		width:100%;
-	}
-	.imgvid .grid li{
-		width:49%;
-	}
-	.slider .play {
+		width:100%
+}
+.imgvid .grid li{
+		width:49%
+}
+.slider .play {
 		background-size:60px 51px
 	}
-	.grid .play {
+.grid .play {
 		background-size:30px 30px
 	}
-	#marca,
+#marca,
 	.botao {
 		background-size:104px 131px
 	}
-	a.clink {
+a.clink {
 		background-position:0 0
 	}
-	
-	a.clink:hover {
+a.clink:hover {
 		background-position:0 -21px
 	}
-	
-	a.email {
+a.email {
 		background-position:-21px 0
 	}
-	
-	a.email:hover {
+a.email:hover {
 		background-position:-21px -21px
 	}
-	
-	#marca {
+#marca {
 		background-position:0 -68px
 	}
-	
-	.vimeo {
+.vimeo {
 		background-position:-42px 0
 	}
-	
-	body>footer .vimeo {
+body>footer .vimeo {
 		background-position:-42px -42px
 	}
-	
-	.vimeo:hover {
+.vimeo:hover {
 		background-position:-42px -21px
 	}
-	
-	.facebook {
+.facebook {
 		background-position:-63px 0
 	}
-	
-	body>footer .facebook {
+body>footer .facebook {
 		background-position:-63px -42px
 	}
-	
-	.facebook:hover {
+.facebook:hover {
 		background-position:-63px -21px
 	}
-	
-	.twitter {
+.twitter {
 		background-position:-84px 0
 	}
-	
-	body>footer .twitter {
+body>footer .twitter {
 		background-position:-84px -42px
 	}
-	#home #fechar.fechado{
+#home #fechar.fechado{
 		background-position:-9px -62px !important
 	}
-	.twitter:hover {
+.twitter:hover {
 		background-position:-84px -21px
 	}
-	
-	#marca {
+#marca {
 		padding:15px 0 15px 115px
 	}
-	#fechar.fechado {
+#fechar.fechado {
 		margin-top:-.5em;
 		width:1.25em;
-		height:1.8em;
-	}
-	body>header {
+		height:1.8em
+}
+body>header {
 		height:160px
 	}
-	body>header nav li,
+body>header nav li,
 	#escolhalingua li,
 	li.selecionado {
 		padding-top:38px!important
 	}
-	
-	body>header nav li:first-child {
+body>header nav li:first-child {
 		padding-top:0!important
 	}
-	
-	body>header,
+body>header,
 	body>header nav:first-child li.selecionado {
 		opacity:1
 	}
-	
-	body#home>header {
+body#home>header {
 		opacity:.9
 	}
-	
-	.botao.share {
+.botao.share {
 		width:20px;
 		height:20px
 	}
-  	#works form label span {
+#works form label span {
 		height:15px;
 		width:15px
   	}
-  	#works #stufflist li{
-		margin:.7em 0;
-	}
-	 #contact .sliderctrl {
-	    margin-bottom:2em;  
-	 }
-  
-	.sliderctrl button{
+#works #stufflist li{
+		margin:.7em 0
+}
+#contact .sliderctrl {
+	    margin-bottom:2em
+}
+.sliderctrl button{
 		border-width:.2em;
 		height:.75em;
-		width:.75em;
-	}
+		width:.75em
 }
-
+}
 /*	[5.4]Para telas com maior densidade de pixels
 ______________________________________________________*/
 @media (min-resolution: 100dpi) {
@@ -1374,7 +1202,6 @@ ______________________________________________________*/
 		background-image:url(img/logo-footer.png)
 	}
 }
-
 /* [6]Correções para navegadores antigos:
 	precisa do js "modernizr.js" para criar a classe
 	"no-mediaqueries" em navegadores mais antigos.
@@ -1385,15 +1212,12 @@ ______________________________________________________*/
 .no-mediaqueries #escolhalingua li {
 	float:left
 }
-
 .no-mediaqueries div[role=main] {
 	padding-top:50px
 }
-
 .no-mediaqueries #home div[role=main] {
-	padding:0;
+	padding:0
 }
-
 .no-mediaqueries #home div[role=main],
 .no-mediaqueries #home header,
 .no-mediaqueries #home footer,
@@ -1401,43 +1225,35 @@ ______________________________________________________*/
 .no-mediaqueries .chamadapequena {
 	margin:0!important
 }
-
 .no-mediaqueries #escolhalingua li.selecionado {
-	padding-top:58px;
+	padding-top:58px
 }
-
 .no-mediaqueries #works form {
 	margin-top:-2.8em
 }
-
 .no-mediaqueries body>header {
 	position:relative;
 	left:0
 }
-
 .no-mediaqueries body>header,
 .no-mediaqueries header nav li.selecionado {
 	background-color:transparent;
 	background:url(img/bgie.png) repeat
 }
-
 .no-mediaqueries #contact section[role=main] div>div {
 	width:49%;
 	padding-left:1%;
 	float:left
 }
-
 .no-mediaqueries .slider li {
-	visibility:hidden;
+	visibility:hidden
 }
-
 .no-mediaqueries .grid {
 	text-align:justify!important;
 	text-justify:distribute;
 	float:none!important;
 	zoom:1
 }
-
 .no-mediaqueries #logo,
 .no-mediaqueries nav.share,
 .no-mediaqueries .grid li,
@@ -1454,9 +1270,8 @@ ______________________________________________________*/
 .no-mediaqueries #contact div[role=main] div>div,
 .no-mediaqueries .sliderctrl,
 .no-mediaqueries .grid>* {
-	display:inline;
+	display:inline
 }
-
 .no-mediaqueries .chamadagrande,
 .no-mediaqueries .chamadapequena {
 	border:12px solid #f9f9f4
@@ -1464,7 +1279,6 @@ ______________________________________________________*/
 .no-mediaqueries .chamadagrande.carregar {
 	border:solid 1px #cfcfcb
 }
-
 .no-mediaqueries #stufflist {
-	overflow:hidden;
+	overflow:hidden
 }
