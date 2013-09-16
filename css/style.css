@@ -1202,6 +1202,9 @@ ______________________________________________________*/
 	body>header {
 		position:relative
 	}
+	div[role=main] {
+		padding-top:45px
+	}
 }
 /*	[5.5]Para telas com maior densidade de pixels
 ______________________________________________________*/
