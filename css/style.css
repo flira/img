@@ -36,7 +36,7 @@
     	[5.1]Para larguras menores que 900px
 		[5.2]Para larguras menores que 720px
 		[5.3]Para larguras menores que 400px
-		[5.4]Para telas com altura menor do que 820px
+		[5.4]Para telas com altura menor do que 900px
 		[5.5]Para telas com maior densidade de pixels
 	[6]Correções para navegadores antigos
 ______________________________________________________*/
@@ -1198,7 +1198,7 @@ body#home>header {
 /*	[5.4]Para telas com altura menor do que 820px
 ______________________________________________________*/
 }
-@media screen and (max-height: 820px) {
+@media screen and (max-height: 900px) {
 	body>header {
 		position:relative
 	}
