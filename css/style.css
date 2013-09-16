@@ -1199,8 +1199,9 @@ body#home>header {
 ______________________________________________________*/
 }
 @media screen and (max-height: 900px) {
-	body>header {
-		position:relative
+	body>header,
+	#home>footer {
+		position:relative!important
 	}
 	div[role=main] {
 		padding-top:45px
