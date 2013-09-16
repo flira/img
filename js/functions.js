@@ -168,7 +168,6 @@ function nextSlide(a) {
 	if (typeof (a) === 'undefined')
 	a = 1 + ($('.slider li').length - $('.slider li[style*="opacity: 1"]').length);
 	if(a==$('.slider li').length){
-		ts = window.clearInterval(ts);
 		previousSlide(1);
 	}
 	else {
@@ -199,16 +198,14 @@ function previousSlide(a) {;
 			$('.slider li:nth-of-type(' + a + ')').css('opacity', '1');
 			$('.slider li:nth-of-type(' + a + ')').css("display","list-item");
 		}
-		ts = self.setInterval('nextSlide( )', timers[1]);
 	});
 }
 
 // função para mudar o slide em sliders
-function changeSlide() {
+function changeSlide(event) {
 	var n = $(this).attr('class').split('e'), a = parseInt(n[1]), b = 1 + ($('.slider li').length - $('.slider li[style*="opacity: 1"]').length);
 	ts = window.clearInterval(ts);
 	if (a > b) {
-		ts = self.setInterval('nextSlide( )', timers[1]);
 		nextSlide(a - 1);
 	} else {
 		previousSlide(a);
@@ -280,9 +277,9 @@ function news() {
 }
 
 // função para passar para a próxima imagem nos sliders
-function changeNews() {
+function changeNews(event) {
 	var a;
-	tn = window.clearInterval(tn);
+	if(event)tn = window.clearInterval(tn);
 	if (!$(this).attr("class")) {
 		a = -(Math.round((parseFloat($('#newslist').css('margin-left')) / $(
 				'#newslist li').width()))) + 1;
@@ -296,7 +293,6 @@ function changeNews() {
 		'margin-left' : -(a * 100) + '%'
 	}, timers[6]);
 	changeCtrl(a + 1, '#news ');
-	tn = self.setInterval('changeNews( )', timers[5]);
 }
 
 /*
