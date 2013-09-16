@@ -33,10 +33,11 @@
     [4.5]Contatos
 	[4.6]Lightbox
 	[5]Media queries
-    [5.1]Para larguras menores que 900px
+    	[5.1]Para larguras menores que 900px
 		[5.2]Para larguras menores que 720px
 		[5.3]Para larguras menores que 400px
-		[5.4]Para telas com maior densidade de pixels
+		[5.4]Para telas com altura menor do que 820px
+		[5.5]Para telas com maior densidade de pixels
 	[6]Correções para navegadores antigos
 ______________________________________________________*/
 
@@ -1194,8 +1195,15 @@ body#home>header {
 		height:.75em;
 		width:.75em
 }
+/*	[5.4]Para telas com altura menor do que 820px
+______________________________________________________*/
 }
-/*	[5.4]Para telas com maior densidade de pixels
+@media screen and (max-height: 820px) {
+	body>header {
+		position:relative
+	}
+}
+/*	[5.5]Para telas com maior densidade de pixels
 ______________________________________________________*/
 @media (min-resolution: 100dpi) {
 	#logo {
