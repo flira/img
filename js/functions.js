@@ -50,9 +50,9 @@ if (!projectSlideSpd)
 var timers = new Array(sliderFadeIn, sliderSpd, transitionSliderSpd,
 		homeTitleSpd, fadeTitleSpd, newsSpd, transitionNewsSpd, worksSlideSpd,projectSlideSpd);
 var links;
-$(document).ready(function() {
-	init();
-});
+
+window.onload=init();
+
 function init() {
 	// função para passar de segundo para milisegundo
 	setTimers();
@@ -87,7 +87,7 @@ function setTimers() {
 
 // Faz fade in das páginas após carregar o conteúdo
 function fadeInPage( ) {
-	$('body').stop(true).animate({opacity:1},timers[4],function ( ) {
+	$('div[role=main],footer').stop(true).animate({opacity:1},timers[4],function ( ) {
 		/* Funções para dispositivos com touchscreen.
 		 * Como algumas funções do mobile são mais pesadas
 		 * elas carregam após todo o site já ter carregado
@@ -97,6 +97,7 @@ function fadeInPage( ) {
 		if ($('html').hasClass('touch'))
 			touchInit();
 	});
+	$('header').css('opacity',.9);
 }
 
 /*
