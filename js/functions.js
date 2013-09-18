@@ -87,6 +87,7 @@ function setTimers() {
 
 // Faz fade in das páginas após carregar o conteúdo
 function fadeInPage( ) {
+	$('.loadingimg').remove();
 	$('div[role=main],footer').stop(true).animate({opacity:1},timers[4],function ( ) {
 		/* Funções para dispositivos com touchscreen.
 		 * Como algumas funções do mobile são mais pesadas

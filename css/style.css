@@ -232,6 +232,7 @@ body#home>footer,
 #home #newslist li,
 .butcher li,
 div[role=main] img,
+.loadingimg,
 .break,
 #project div[itemprop=breadcrumb],
 .slidectrlwrap,
@@ -269,6 +270,9 @@ div[role=main] img,
 }
 #home #newslist {
 	height:3.5em
+}
+.loadingimg {
+	height:100%	
 }
 .butcher,
 #home div[role=main]>div:first-child,
@@ -397,6 +401,9 @@ span.selecionado,
 .grid .play {
 	background:url(img/smallplay.png) center center no-repeat
 }
+.loadingimg {
+	background:url(img/img_sticker.gif) center center no-repeat	
+}
 #marca,
 .botao {
 	background-image:url(img/tudo.png);
@@ -492,12 +499,16 @@ body#home>footer>div>div,
 }
 .slider,
 div[role=main],
-footer {
+footer,
+body>header {
 	opacity:0
 }
 #featured,
 .slider .play  {
 	opacity:.7
+}
+body>header nav:first-child li.selecionado{
+	opacity:.9;
 }
 #project .slider,
 .play:hover {
@@ -505,8 +516,10 @@ footer {
 }
 body>header,
 body>header nav:first-child li.selecionado{
-	opacity:.9;
 	z-index:99
+}
+.loadingimg {
+	z-index:50
 }
 #project section[itemprop=author] h1,
 #fechar,
@@ -625,7 +638,8 @@ body#home>footer,
 .slider li,
 .play,
 .chamada,
-.vimeo iframe {
+.vimeo iframe,
+.loadingimg {
 	position:absolute
 }
 .slider,
@@ -652,7 +666,8 @@ ______________________________________________________*/
 }
 .slider li,
 .play,
-.vimeo iframe {
+.vimeo iframe,
+.loadingimg {
 	top:0;
 	left:0
 }
@@ -732,7 +747,7 @@ body#home .sliderctrl button{
 /*	[4.2]our work
 ______________________________________________________*/
 #works form {
-	margin-top:-3.5em
+	margin-top:-2.3em
 }
 #works input[type=radio] {
 	margin-right:-15px
@@ -1060,7 +1075,7 @@ div[role=main] {
 		margin-bottom:1.5em
 }
 #works form {
-		margin:0 0 1em
+		margin:1em 0 .5em
 	}
 #project h1 {
 		display:block!important
