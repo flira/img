@@ -1211,10 +1211,10 @@ body#home>header {
 		height:.75em;
 		width:.75em
 }
-/*	[5.4]Para telas com altura menor do que 820px
+/*	[5.4]Para telas com altura menor do que 740px
 ______________________________________________________*/
 }
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 740px) {
 	body>header,
 	#home>footer {
 		position:relative!important
